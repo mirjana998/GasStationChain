@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="345.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lanacbenzinskihstanica.TrgovacController">
+   <top>
+      <AnchorPane prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #2e3e5b;" BorderPane.alignment="CENTER">
+         <effect>
+            <Bloom />
+         </effect>
+         <children>
+            <Label layoutX="230.0" layoutY="16.0" text="TRGOVINA" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="309.0" prefWidth="520.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="61.0" layoutY="68.0" prefHeight="18.0" prefWidth="108.0" text="Nova izlazna faktura" />
+            <Button fx:id="novaIzlaznaFakturaButton" layoutX="226.0" layoutY="64.0" mnemonicParsing="false" onAction="#setNovaIzlaznaFakturaButtonOnAction" prefHeight="26.0" prefWidth="252.0" text="OK" />
+            <Button fx:id="prikazStanjaMagacinButton" layoutX="226.0" layoutY="115.0" mnemonicParsing="false" onAction="#PrikazStanjaMagacinButtonOnAction" prefHeight="26.0" prefWidth="251.0" text="OK" />
+            <Label layoutX="60.0" layoutY="119.0" text="Prikaz stanja u magacinu" />
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="18.0" prefWidth="141.0" text="Odaberi naredni korak">
+               <effect>
+                  <Bloom />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="211.0" text="Izlaz" />
+            <Button fx:id="izlazButton" layoutX="227.0" layoutY="207.0" mnemonicParsing="false" onAction="#izlazButtonOnAction" prefHeight="26.0" prefWidth="250.0" text="OK" />
+            <Button fx:id="prikazPoslovniPartnerButton" layoutX="226.0" layoutY="162.0" mnemonicParsing="false" onAction="#prikazPoslovniPartnerButtonOnAction" prefHeight="26.0" prefWidth="251.0" text="OK" />
+            <Label layoutX="60.0" layoutY="167.0" prefHeight="18.0" prefWidth="144.0" text="Prikaz poslovnih partnera" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </AnchorPane>
+   </center>
+</BorderPane>
